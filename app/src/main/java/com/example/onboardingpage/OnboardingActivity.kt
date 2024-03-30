@@ -14,9 +14,10 @@ class OnboardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingBinding
 
     private val image = intArrayOf(
-        R.drawable.image1,
-        R.drawable.image2,
-        R.drawable.image3
+        R.drawable.gambar1,
+        R.drawable.gambar2,
+        R.drawable.gambar3,
+        R.drawable.gambar4
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +33,7 @@ class OnboardingActivity : AppCompatActivity() {
             viewPager.apply {
                 orientation = ViewPager2.ORIENTATION_HORIZONTAL
                 adapter = SliderAdapter
-                offscreenPageLimit = 3
+                offscreenPageLimit = 4
                 val pageMargin = resources.getDimensionPixelOffset(R.dimen.pageMargin).toFloat()
                 val pageOffset = resources.getDimensionPixelOffset(R.dimen.offset).toFloat()
                 wormDotsIndicator.attachTo(viewPager)
